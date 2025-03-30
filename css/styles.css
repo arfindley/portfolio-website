@@ -3,6 +3,38 @@ Colors used:
 Primary Color (Blue): #1D1C21;
 Secondary Color (Blue): #6D8B89;
 */
+/* Header styling */
+header {
+  background-color: #ffffff;
+  padding: 10px 20px; /* Add padding for spacing */
+  margin: 0; /* Remove any margin */
+  border-bottom: 3px solid #4a4a4a;
+  text-align: left; /* Align the content to the left */
+  width: 100%; /* Make the header span the full width of the page */
+  position: relative; /* Ensure it stays in its position */
+}
+
+/* Prevent centering of header content */
+header div {
+  display: flex;
+  justify-content: space-between; /* Space out the logo and navigation */
+  align-items: center; /* Align items vertically */
+}
+
+header nav ul {
+  display: flex;
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin-right: 20px; /* Add spacing between navigation links */
+}
+
+header nav ul li:last-child {
+  margin-right: 0; /* Remove margin for the last item */
+}
 * {
     box-sizing: border-box;
   }
@@ -16,6 +48,12 @@ body {
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #4a4a4a;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    margin: 10px;
+    border-bottom: 3px solid #4a4a4a;
   }
   
   h1, h2, h3, h4 {
@@ -90,3 +128,172 @@ a:focus {
     background-color: #ff7f50;
     color: #ffffff;
   }
+/* Center all content on the page except the header */
+.about-page {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: calc(100vh - 100px); /* Adjust height to exclude the header */
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Center text content */
+}
+
+.about-page-content {
+  max-width: 800px; /* Limit the width of the content */
+  width: 100%; /* Ensure it takes up full width on smaller screens */
+  padding: 20px; /* Add some padding for spacing */
+}
+
+.about-columns {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 50px; /* Space between columns */
+  justify-content: center; /* Center the columns horizontally */
+}
+
+.about-columns picture,
+.about-columns #my-story-section {
+  flex: 1; /* Make columns take equal space */
+  max-width: 400px; /* Limit the width of each column */
+}
+
+.skills-columns {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 50px; /* Space between columns */
+  justify-content: center; /* Center the columns horizontally */
+}
+
+.skills-columns div {
+  flex: 1; /* Make columns take equal space */
+  max-width: 300px; /* Limit the width of each column */
+  text-align: center; /* Center the entire column content */
+}
+
+.skills-columns ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.skills-columns li {
+  margin-bottom: 10px; /* Add spacing between list items */
+  line-height: 1.5; /* Improve readability */
+}
+/* Center the main content */
+.main-content {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center; /* Center text content */
+  gap: 50px; /* Add spacing between sections */
+  padding: 20px; /* Add padding around the content */
+}
+
+.about-page-content {
+  max-width: 800px; /* Limit the width of the content */
+  width: 100%; /* Ensure it takes up full width on smaller screens */
+}
+
+footer#contact {
+  max-width: 800px; /* Match the width of the About section */
+  width: 100%; /* Ensure it takes up full width on smaller screens */
+  text-align: center; /* Center the footer content */
+  padding: 20px 0; /* Add vertical padding */
+}
+/* Center the main content and footer, excluding the header */
+.index-page {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: calc(100vh - 100px); /* Adjust height to exclude the header */
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Center text content */
+}
+
+header {
+  width: 100%; /* Make the header span the full width */
+  text-align: left; /* Align header content to the left */
+  padding: 10px 20px; /* Add padding for spacing */
+  border-bottom: 3px solid #4a4a4a; /* Optional: Add a border to separate the header */
+}
+
+main {
+  max-width: 800px; /* Limit the width of the main content */
+  width: 100%; /* Ensure it takes up full width on smaller screens */
+  padding: 20px; /* Add padding around the content */
+}
+
+main h1,
+main h2 {
+  margin-bottom: 20px; /* Add spacing below headings */
+}
+
+main p {
+  margin-bottom: 20px; /* Add spacing between paragraphs */
+  line-height: 1.6; /* Improve readability */
+}
+
+footer {
+  max-width: 800px; /* Match the width of the main content */
+  width: 100%; /* Ensure it takes up full width on smaller screens */
+  text-align: center; /* Center the footer content */
+  padding: 20px 0; /* Add vertical padding */
+  margin-top: 40px; /* Add space above the footer */
+}
+
+footer div {
+  margin-top: 10px; /* Add spacing between footer elements */
+}
+
+footer img {
+  margin: 0 10px; /* Add spacing between social media icons */
+  transition: transform 0.2s ease; /* Add hover effect */
+}
+
+footer img:hover {
+  transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+/* Style for the work boxes */
+.work-box {
+  border: 2px solid black; /* Add a black border */
+  border-radius: 8px; /* Optional: Round the corners */
+  padding: 20px; /* Add padding inside the box */
+  margin: 20px auto; /* Add margin around the box */
+  max-width: 400px; /* Limit the width of the box */
+  text-align: center; /* Center the content inside the box */
+  background-color: #fff; /* Set a white background */
+}
+
+.work-box img {
+  max-width: 100%; /* Make the image responsive */
+  border-radius: 4px; /* Optional: Slightly round the image corners */
+}
+
+.work-box h3 {
+  margin-top: 15px; /* Add spacing above the heading */
+  font-size: 1.5em; /* Adjust the font size */
+}
+
+.work-box p {
+  margin: 15px 0; /* Add spacing above and below the paragraph */
+  line-height: 1.6; /* Improve readability */
+}
+
+.work-box .button {
+  display: inline-block; /* Make the button inline-block */
+  margin-top: 10px; /* Add spacing above the button */
+  padding: 10px 20px; /* Add padding inside the button */
+  background-color: #ff7f50; /* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 4px; /* Round the button corners */
+  transition: background-color 0.3s ease; /* Add a hover effect */
+}
+
+.work-box .button:hover {
+  background-color: #cc6540; /* Darken the button on hover */
+}
