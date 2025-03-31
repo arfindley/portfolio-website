@@ -5,6 +5,7 @@ Secondary Color (Blue): #6D8B89;
 */
 /* Header styling */
 header {
+  text-align: unset;
   background-color: #ffffff;
   padding: 10px 20px; /* Add padding for spacing */
   margin: 0; /* Remove any margin */
@@ -296,4 +297,31 @@ footer img:hover {
 
 .work-box .button:hover {
   background-color: #cc6540; /* Darken the button on hover */
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
 }
