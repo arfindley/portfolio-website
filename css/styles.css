@@ -298,30 +298,142 @@ footer img:hover {
 .work-box .button:hover {
   background-color: #cc6540; /* Darken the button on hover */
 }
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-  text-align: unset;
-  padding: 20px 0 13px;
+/* Medium screen sizes (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Center the header and align logo and navigation horizontally */
+  header div {
+    display: flex;
+    justify-content: space-between; /* Space out logo and navigation */
+    align-items: center; /* Align items vertically */
+    text-align: center;
+  }
+
+  /* Use a 2-column layout for projects on the home page */
+  .work-box {
+    max-width: 45%; /* Adjust width for 2-column layout */
+    margin: 20px; /* Add spacing between columns */
+  }
+
+  .work-box-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-around; /* Space out the columns */
+  }
+
+  /* Adjust Skills & Tools section on the about page */
+  .skills-columns {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px; /* Add spacing between columns */
+    justify-content: space-between; /* Space out the columns */
+  }
+
+  .skills-columns div {
+    flex: 1 1 45%; /* Adjust width for 2-column layout */
+  }
+
+  /* Adjust font sizes */
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
 }
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
+
+/* Large screen sizes (desktops) */
+@media (min-width: 1025px) {
+  /* Adjust header for desktop */
+  header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Add more padding for larger screens */
+  }
+
+  /* Use a 60/40 column layout for Skills & Tools */
+  .skills-columns div:first-child {
+    flex: 0 0 60%; /* Make the first column 60% width */
+  }
+
+  .skills-columns div:last-child {
+    flex: 0 0 40%; /* Make the second column 40% width */
+  }
+
+  /* Adjust project layout for desktop */
+  .work-box {
+    max-width: 30%; /* Adjust width for 3-column layout */
+    margin: 20px; /* Add spacing between columns */
+  }
+
+  .work-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space out the columns */
+  }
+
+  /* Adjust font sizes */
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
 }
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
+/* Add transitions to buttons */
+.button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
+
+.button:hover {
+  background-color: #cc6540; /* Change background color on hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
-/* ==============================
-Extra-large devices (1920px or larger)
-================================= */
-@media only screen and (min-width: 1920px) {
+
+/* Add transitions to links */
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #cc6540; /* Change link color on hover */
+}
+<div class="work-box">
+    <picture>
+        <source srcset="img/newproject/newproject-img.png" media="(max-width:767px)">
+        <img src="img/newproject/newproject-img.png" alt="New Project Illustration">
+    </picture>
+    <h3>New Project</h3>
+    <p>This is a new project showcasing an SVG animation of my hometown.</p>
+    <a href="#" class="button">Read more</a>
+</div>
+
+<!-- Add an SVG illustration -->
+<div class="svg-container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="200" height="200">
+        <circle cx="50" cy="50" r="40" fill="#ff7f50" class="animated-circle" />
+    </svg>
+</div>
+/* Animate the SVG circle */
+.animated-circle {
+  animation: scaleUp 2s infinite alternate ease-in-out;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
