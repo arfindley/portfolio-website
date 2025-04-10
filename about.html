@@ -1,91 +1,135 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Anton:300,400,700" rel="stylesheet">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d5f61ecc37.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>About Ali Findley</title>
 </head>
-<body class="about-page">
+<body>
     <header>
-        <div>
-            <a href="index.html"><b>Ali Findley</b></a>
-            <nav>
-                <ul>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="container">
+            <div class="row">
+                <a href="index.html">Ali Findley</a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Work</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#Contact" onclick="menuToggle()">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-<div>
-    <div class="main-content">
-        <div class="about-page-content">
-            <h1>About</h1>
-            <div class="about-columns">
-                <picture>
-                    <source srcset="img/about/pfp.jpg" media="(max-width:767px)">
-                    <img src="img/about/pfp.jpg" alt="my profile image">
-                </picture>
-                <div id="my-story-section">
-                    <h2>My Story</h2>
-                    <p>I’m an emerging UX designer with a strong background in psychology and a passion for human-centered design.</p>
-                    <p>Drawing from my experience in operations and data analysis, I bring a unique approach to solving complex problems with empathy and precision.</p>
-                    <p>With a focus on creating intuitive, impactful digital experiences, I thrive on turning user challenges into innovative design solutions.</p>
-                    <a href="CV/resume-ali-findley.pdf" target="_blank">Download my CV</a>
+    <main>
+        <div id="about-me">
+            <div class="container">
+                <div class="row">
+                    <img class="column col-md-6 col-lg-7" src="img/about/pfp.jpg" alt="my profile image">
+                    <div class="column col-md-6 col-lg-5">
+                        <h2>My Story</h2>
+                        <p>I am a UI/UX Designer with a diverse background spanning Psychology, Healthcare, Education, and Retail. Each of these fields has contributed invaluable experience to my skill set.
+                        </p>
+                        <p>UI/UX design enables me to serve others while pursuing my passion for creativity. My aspiration is to develop solutions that foster comfort, inspiration, and a sense of “coziness” in daily life, as I believe that life should not be overwhelmingly stressful all the time.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <h2>Skills and Tools</h2>
-            <div class="skills-columns">
-                <div>
-                    <h3>Relevant Skills</h3>
                     <ul>
-                        <li>Usability Testing</li>
-                        <li>Wireframing/Prototyping</li>
-                        <li>Research Skills: Competitive research, User Interviews, and User Surveys</li>
                     </ul>
                 </div>
-                <div>
-                    <h3>Tools I Use</h3>
-                    <ul>
-                        <li>Figma</li>
-                        <li>Microsoft Office</li>
-                        <li>Usability Hub</li>
-                    </ul>
+                <br>
+                <div id="skills-and-tools">
+                    <div class="container">
+                        <div class="row">
+                            <h2>Skills & Tools</h2>
+                            <div>
+                                <div id="relevant-skills">
+                                    <div class="column col-md-6 col-lg-7">
+                                        <h3>Relevant Skills:</h3>
+                                        <ul>
+                                            <li class="category-item">
+                                                <h4>User Research</h4>
+                                                <ul>
+                                                    <li class="sub-item">
+                                                        Usability Testing
+                                                    </li>
+                                                    <li class="sub-item">
+                                                        Wireframing/Prototyping
+                                                    </li>
+                                                    <li class="sub-item">
+                                                        Research skills: competive research, User Interviews, and User Surveys
+                                                    </li>
+                                                </ul>
+                                            </li>
+                    
+                                    </div>
+                                </div>
+                                <div id="tools-i-use">
+                                    <div class="column col-md-6 col-lg-5">
+                                        <h3>Tools I Use:</h3>
+                                        <ul>
+                                            <li class="category-item">
+                                                Figma
+                                            </li>
+                                            <li class="category-item">
+                                                Procreate
+                                            </li>
+                                            <li class="category-item">
+                                                GitHub
+                                            </li>
+                                            <li class="category-item">
+                                                VS Code
+                                            </li>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
-        <footer id="contact">
-            <h2>Get in Touch</h2>
-            <p>
-                Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:2603770616">+260 3770616</a> or Skype me at <a href="skype:hello.careerfoundry">hello.careerfoundry</a>. Prefer sending an email?
-            </p>
-            <div>
-                <a href="mailto:ali@findleys.net">Email me</a>
-            </div>
-            <div>
-                <!-- Social Media Layout and Placeholders -->
-                <a href="LINKEDIN-URL" target="_blank">
-                    <img src="http://via.placeholder.com/32x32">
-                </a>
-                <a href="TWITTER-URL" target="_blank">
-                    <img src="http://via.placeholder.com/32x32">
-                </a>
-                <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram logo" width="32" height="32">
-                </a>
-            </div>
-            <div>
-                <p>Copyright Ali Findley 2025</p>
-        </div>
-            </footer>
-            <script src="js/scripts.js"></script>
-        </body>
-        </html>
+    </main>
+    <footer id="Contact">
+        <div class="container">
+            <div class="row">
+                <div id="download-box">
+                    <div class="container">
+                        <div class="row">
+                            <p>If you’d like to view more about my employment background, I’d greatly appreciate it if you downloaded my Resume below. Thank you!</p>
+                            <a href="cv/resume-ali-findley.pdf" class="testLink" target="_blank">Download Resume</a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="container">
+                        <div class="row">
+                            <h2>Contact me </h2>
+                            <p>You can send me an <a href="mailto:ali@findleys.net">email</a>, give my <a href="Call_Me_Here">number</a> a call, or reach me through my social networks below.</p>
+                            <br>
+                            <div class="social-icons">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME" target="_blank"></i>        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram logo"></a>
+                                    </li>
+                                </ul>
+                            </div><!--end social-->
+                        </div>
+                    </div>
+                    <div>
+                        <p>Copyright Alexandria Findley 2025</p>
+                    </div>
+                </footer>
+            </body>
+            </html>
