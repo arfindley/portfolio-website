@@ -141,7 +141,6 @@ h1 {
 }
 h2 {
   font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   font-size: 32px;
@@ -149,7 +148,6 @@ h2 {
 }
 h3 {
   font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 28px;
@@ -157,7 +155,6 @@ h3 {
 }
 h4 {
   font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
@@ -165,7 +162,6 @@ h4 {
 }
 p {
   font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
@@ -193,7 +189,6 @@ a:visited {
 .testLink {
   background-color: #243642;
   font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   color: white;
   padding: 14px 25px;
@@ -278,7 +273,6 @@ img {
 }
 .category-item {
   font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
@@ -286,7 +280,6 @@ img {
 }
 .sub-item {
   font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
